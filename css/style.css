@@ -73,6 +73,8 @@ header{
 
 .section_2{
     padding-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
 
 .sec_2_title{
@@ -98,4 +100,25 @@ header{
     font-weight: 500;
     letter-spacing: -1px;
     color: #a1a1a1;
+}
+
+.sec_2_con_wrap{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+}
+
+.sec_2_con_1 a,
+.sec_2_con_2 a{
+    display: grid;
+    row-gap: 70px;
+}
+
+.sec_2_con_2{
+    padding-right: 230px;
+}
+
+.sec_2_con_1 img,
+.sec_2_con_2 img{
+    /* width: 19.5%; */
+    width: 78%;
 }
