@@ -45,9 +45,6 @@ header {
   justify-content: space-between;
 }
 
-.header_icon svg{
- 
-}
 
 /* 섹션_1시작 */
 
@@ -266,7 +263,7 @@ header {
 .sec_4_contitle h3 {
   font-size: 24px;
   font-weight: 700;
-  letter-spacing: -3px;
+  letter-spacing: -1px;
   line-height: 30px;
   padding-bottom: 10px;
 }
@@ -275,7 +272,7 @@ header {
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   color: #1d1d1d;
   opacity: 0.5;
 }
