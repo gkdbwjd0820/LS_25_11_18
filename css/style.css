@@ -1,124 +1,262 @@
 @import url(reset.css);
 @import url(common.css);
 
-header{
-    width: 100%;
-    height: 80px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    padding: 0 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logo_header{
-    width: 6.25%;
+.logo_header {
+  width: 6.25%;
 }
 
-.menu_wrap{
-    width: 34.895%;
-    display: flex;
-    justify-content: space-between;
+.menu_wrap {
+  width: 34.895%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.menu_wrap a{
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: white;
+.menu_wrap a {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
 }
 
 /* 섹션_1시작 */
 
-.section_1{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: url(../img/section_1/bg_1.png) no-repeat center / cover;
-    font-family: "Inter", sans-serif;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.section_1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/section_1/bg_1.png) no-repeat center / cover;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.sec_1_icon{
-    position: absolute;
-    top: 35%;
-    right: 34%;
-    width: 9.218%;
-    
+.sec_1_icon {
+  position: absolute;
+  top: 35%;
+  right: 34%;
+  width: 9.218%;
 }
 
-.sec_1_title h3{
-    font-size: 100px;
-    font-weight: 700;
-    letter-spacing: -2px;
-    line-height: 120px;
-    color: white;
+.sec_1_title h3 {
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 120px;
+  color: white;
 }
 
-.sec_1_title p{
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 50px;
-    color: white;
-    opacity: 0.6;
+.sec_1_title p {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  color: white;
+  opacity: 0.6;
 }
 
 /* 섹션2시작 */
 
-.section_2{
-    padding-top: 150px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+.section_2 {
+  padding-top: 150px;
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: auto 1fr; /* 왼쪽은 콘텐츠 크기만큼, 오른쪽은 꽉 차게 */
+  column-gap: 266px; /* ⭐ 타이틀 ↔ 이미지 사이 간격 정확히 266px */
+  align-items: start;
+  position: relative;
 }
 
-.sec_2_title{
-    padding-top: 90px;
-    padding-left: 226px;
-    font-family: "Noto Sans KR", sans-serif;
+.sec_2_title {
+  padding-top: 90px;
+  padding-left: 226px;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
-.sec_2_title h4{
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 60px;
-    letter-spacing: -3px;
+.sec_2_title h4 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -3px;
 }
 
-.sec_2_title h4 span{
-    color: #F9292E;
+.sec_2_title h4 span {
+  color: #f9292e;
 }
 
-.sec_2_title p{
-    padding-top: 35px;
-    font-size: 24px;
-    font-weight: 500;
-    letter-spacing: -1px;
-    color: #a1a1a1;
+.sec_2_title p {
+  padding-top: 35px;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  color: #a1a1a1;
 }
 
-.sec_2_con_wrap{
-    display: grid;
-    grid-template-columns: repeat(2,2fr);
+.ls_img {
+  width: 43.83%;
+  position: absolute;
+  top: 721px;
+  left: 0;
+  z-index: 20;
+  opacity: 0.1;
 }
 
-.sec_2_con_1 a,
-.sec_2_con_2 a{
-    display: grid;
-    row-gap: 70px;
+.sec_2_img_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px;
+  padding-right: 180px;
 }
 
-.sec_2_con_2{
-    padding-right: 230px;
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  display: block;
 }
 
-.sec_2_con_1 img,
-.sec_2_con_2 img{
-    /* width: 19.5%; */
-    width: 78%;
+.sec_2_img_grid a:nth-child(1) {
+  transform: translateY(-40px);
+}
+
+.sec_2_img_grid a:nth-child(3) {
+  transform: translateY(-40px);
+}
+
+/* 섹션3시작 */
+
+.section_3 {
+  margin-top: 150px;
+  background: url(../img/section_3/bg_3.png) no-repeat center / cover;
+  height: 94vh;
+  padding: 0 235px;
+}
+
+.section_3 h2 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -3px;
+  color: white;
+  padding-top: 90px;
+  text-align: center; /* flex 대신 가운데 정렬 */
+  display: block; /* 기본값으로 복원 */
+  justify-content: center; /* 필요 없음 */
+}
+
+.section_3 span {
+  color: #f9292e;
+}
+
+.sec_3_con_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 53px;
+}
+
+.sec_3_con {
+  width: 20.68%;
+}
+
+.sec_3_img {
+  width: 100%;
+}
+
+.sec_3_contitle {
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: center;
+}
+
+.sec_3_contitle h4 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: -1px;
+  color: #4788d0;
+  opacity: 0.7;
+  padding-bottom: 20px;
+}
+
+.sec_3_contitle p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: -1px;
+  color: white;
+  opacity: 0.7;
+}
+
+/* 섹션4시작 */
+
+.section_4 {
+  padding: 150px 235px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.sec_4_title_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section_4 h2 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -3px;
+  color: black;
+}
+
+.section_4 span {
+  color: #f9292e;
+}
+
+.sec_4_icon {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.sec_4_con_wrap {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec_4_con {
+  width: 31.8%;
+}
+
+.sec_4_contitle {
+  padding-top: 20px;
+}
+
+.sec_4_contitle h3 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -3px;
+  line-height: 30px;
+  padding-bottom: 10px;
+}
+
+.sec_4_contitle p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -2px;
+  color: #1d1d1d;
+  opacity: 0.5;
 }
