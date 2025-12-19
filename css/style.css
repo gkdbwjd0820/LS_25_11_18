@@ -599,15 +599,15 @@ header {
 }
 
 .sec_5_con_wrap{
-  padding-top: 50px;
+  padding-top: 54px;
 }
 
 .sec_5_con a{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .line{
@@ -635,6 +635,10 @@ header {
   font-weight: 600;
   line-height: 30px;
   letter-spacing: -2px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .sec_5_contitle p{
@@ -644,6 +648,57 @@ header {
   letter-spacing: -2px;
   color: #969696;
   padding-top: 5px;
+}
+
+.mo_section_5{
+  display: none;
+}
+
+@media screen and (max-width: 400px){
+  .section_5{
+    display: none;
+  }
+
+  .mo_section_5{
+    display: block;
+    padding: 0 20px 100px 20px;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+
+  .sec_5_title {
+    font-size: 30px;
+  }
+
+  .sec_5_con_wrap{
+    padding-top: 40px;
+  }
+
+  
+  .sec_5_con h3{
+    font-size: 12px;
+  }
+
+  .sec_5_contitle{
+    width: 63%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .sec_5_contitle h4{
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -1px;
+    -webkit-line-clamp: 1; /* ← 1줄까지만 보이고 … */
+    line-clamp: 1;
+  }
+
+  .sec_5_contitle p{
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: -2px;
+  }
 }
 
 /* 섹션6시작 */
@@ -687,6 +742,58 @@ header {
   padding-top: 21px;
 }
 
+
+.mo_section_6{
+  display: none;
+}
+
+@media screen and (max-width: 400px){
+  .section_6{
+    display: none;
+  }
+
+  .mo_section_6{
+    display: block;
+     padding: 0 20px 100px 20px;
+  }
+
+  .faq{
+    padding-bottom: 10px;
+  }
+
+  .faq a,
+  .contact a{
+    position: relative;
+  }
+
+  .faq_title,
+  .contact_title{
+    position: absolute;
+    top: 25%;
+    left: 7%;
+    z-index: 20;
+  }
+
+  .faq h4,
+  .contact h4{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -1px;
+    color: white;
+  }
+
+  .faq p,
+  .contact p{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: -1px;
+    color: white;
+    padding-top: 10px;
+  }
+}
+
 /* 푸터시작 */
 
 footer{
@@ -708,10 +815,6 @@ footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.logo_footer{
-  /* width: 20%; */
 }
 
 .footer_con_1{
@@ -755,4 +858,85 @@ footer{
   line-height: 15px;
   color: white;
   opacity: 0.3;
+}
+
+.mo_footer{
+  display: none;
+}
+
+@media screen and (max-width: 400px){
+  footer{
+    display: none;
+  }
+
+  .mo_footer{
+    display: block;
+    padding: 30px 20px 10px 20px;
+    width: 100%;
+    min-height: 247px;   /* 최소 높이만 보장 */
+    height: auto;    
+    background-color: #0b1835;
+  }
+
+  .mo_footer_conwrap{
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  .footer_icon {
+    width: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .blog{
+    margin-left: 5px;
+  }
+
+  .mo_footer_con_1{
+    padding-top: 25px;
+  }
+
+  .mo_footer_con_1 a{
+    font-size: 11px;
+    color: white;
+  }
+
+  .mo_footer_con_1_1{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mo_footer_con_1_2{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+  }
+
+
+  .address{
+    padding: unset;
+  }
+
+  .address p{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 15px;
+    color: white;
+  }
+
+  .c{
+    padding: unset;
+    padding-top: 50px;
+  }
+
+  .c p{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 15px;
+  }
 }
