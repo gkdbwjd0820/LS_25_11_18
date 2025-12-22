@@ -218,11 +218,33 @@ header {
   padding-right: 180px;
 }
 
+.card{
+  position: relative;
+  overflow: hidden;
+}
+
 .card img {
   width: 100%;
   height: auto;
   border-radius: 20px;
   display: block;
+  object-fit: cover;
+}
+
+.card_title{
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+.card_title img{
+  width: 12%;
+  padding-top: 8px;
+  margin: 0 auto;
 }
 
 .sec_2_img_grid a:nth-child(1) {
@@ -231,6 +253,46 @@ header {
 
 .sec_2_img_grid a:nth-child(3) {
   transform: translateY(-40px);
+}
+
+.overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 20px 50px 20px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  transition: opacity 0.3s easer;
+}
+
+.overlay h3{
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 50px;
+  border-bottom: 1px solid white;
+}
+
+.overlay_title{
+  font-size: 20px;
+}
+
+.overlay li{
+  padding-top: 20px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.card:hover .card_title{
+  opacity: 0;
+}
+
+.card:hover .overlay{
+  opacity: 1;
 }
 
 .mo_section_2{
@@ -364,7 +426,7 @@ header {
   font-size: 24px;
   font-weight: 400;
   line-height: 35px;
-  letter-spacing: -1px;
+  letter-spacing: -2px;
   color: white;
   opacity: 0.7;
 }
@@ -498,7 +560,7 @@ header {
 .sec_4_contitle h3 {
   font-size: 24px;
   font-weight: 700;
-  letter-spacing: -1px;
+  letter-spacing: -3px;
   line-height: 30px;
   padding-bottom: 10px;
 }
@@ -631,7 +693,7 @@ header {
 }
 
 .sec_5_contitle h4{
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
   line-height: 30px;
   letter-spacing: -2px;
