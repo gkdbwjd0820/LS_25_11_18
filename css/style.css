@@ -30,6 +30,7 @@ header {
   width: 80%;
   display: flex;
   justify-content: space-between;
+
 }
 
 .menu_wrap a {
@@ -37,6 +38,14 @@ header {
   font-size: 20px;
   font-weight: 500;
   color: white;
+  position: relative;
+}
+
+.landmark{
+  position: absolute;
+  top: 0;
+  right: -20px;
+  opacity: 0;
 }
 
 .header_icon {
@@ -44,6 +53,17 @@ header {
   display: flex;
   justify-content: space-between;
 }
+
+.menu_wrap a:hover{
+  color: #f9292e;
+}
+
+.menu_wrap li:hover .landmark{
+  opacity: 1;
+}
+/* .landmark:hover{
+  opacity: 1;
+} */
 
 .mo_header{
   display: none;
