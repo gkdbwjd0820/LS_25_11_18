@@ -353,6 +353,7 @@ header {
 
 .card:hover .overlay{
   opacity: 1;
+  transition: 0.5s;
 }
 
 .mo_section_2{
