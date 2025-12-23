@@ -1,3 +1,11 @@
 .wrap{
     position: relative;
 }
+
+.sec_2_title ,
+.sec_3_contitle,
+.section_4,
+.section_5,
+.sec_6_con_wrap{
+    font-family: "Noto Sans KR", sans-serif;
+}

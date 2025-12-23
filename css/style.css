@@ -240,7 +240,6 @@ header {
 .sec_2_title {
   padding-top: 90px;
   padding-left: 226px;
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 .sec_2_title h4 {
@@ -469,7 +468,6 @@ header {
 }
 
 .sec_3_contitle {
-  font-family: "Noto Sans KR", sans-serif;
   text-align: center;
 }
 
@@ -577,7 +575,6 @@ header {
 
 .section_4 {
   padding: 150px 235px;
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 .sec_4_title_wrap {
@@ -706,7 +703,6 @@ header {
 
 .section_5 {
   padding: 0 235px 150px 235px;
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 .sec_5_title {
@@ -830,7 +826,7 @@ header {
   padding: 0 235px 300px 235px;
   display: flex;
   justify-content: space-between;
-  font-family: "Noto Sans KR", sans-serif;
+  
 }
 
 .faq a,
