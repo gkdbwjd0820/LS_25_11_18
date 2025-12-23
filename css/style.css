@@ -906,7 +906,7 @@ header {
   .contact p{
     font-size: 12px;
     font-weight: 500;
-    line-height: 12px;
+    /* line-height: 12px; */
     letter-spacing: -1px;
     color: white;
     padding-top: 10px;
