@@ -26,7 +26,7 @@
   color: white;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
   .top_btn{
     top: 630px;
     right: 20px;
@@ -109,7 +109,7 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
   header{
     display: none;
   }
@@ -179,7 +179,7 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
   .section_1{
     display: none;
   }
@@ -360,7 +360,7 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
   .section_2{
     display: none;
   }
@@ -496,7 +496,7 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
   .section_3{
     display: none;
   }
@@ -640,7 +640,7 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
   .section_4{
     display: none;
   }
@@ -777,7 +777,7 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
   .section_5{
     display: none;
   }
@@ -870,7 +870,7 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
   .section_6{
     display: none;
   }
@@ -987,7 +987,7 @@ footer{
   display: none;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
   footer{
     display: none;
   }
