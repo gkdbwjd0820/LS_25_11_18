@@ -862,6 +862,17 @@ header {
   padding-top: 21px;
 }
 
+.faq img,
+.contact img{
+  width: 100%;
+  display: block;
+}
+
+.faq_title,
+.contact_title{
+  max-width: 90%;
+}
+
 
 .mo_section_6{
   display: none;
@@ -881,10 +892,10 @@ header {
     padding-bottom: 10px;
   }
 
-  /* .faq a,
+  .faq a,
   .contact a{
     position: relative;
-  } */
+  }
 
   /* .faq_title,
   .contact_title{
