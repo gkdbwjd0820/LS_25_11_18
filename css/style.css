@@ -836,6 +836,7 @@ header {
 
 .faq_title,
 .contact_title{
+  width: 100%;
   position: absolute;
   top: 25%;
   left: 7%;
@@ -888,7 +889,7 @@ header {
   /* .faq_title,
   .contact_title{
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 7%;
     z-index: 20;
   } */
