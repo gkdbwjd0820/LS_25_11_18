@@ -880,10 +880,10 @@ header {
     padding-bottom: 10px;
   }
 
-  .faq a,
+  /* .faq a,
   .contact a{
     position: relative;
-  }
+  } */
 
   /* .faq_title,
   .contact_title{
