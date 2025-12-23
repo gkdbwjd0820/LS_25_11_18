@@ -885,13 +885,13 @@ header {
     position: relative;
   }
 
-  .faq_title,
+  /* .faq_title,
   .contact_title{
     position: absolute;
     top: 25%;
     left: 7%;
     z-index: 20;
-  }
+  } */
 
   .faq h4,
   .contact h4{
